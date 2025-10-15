@@ -1,0 +1,90 @@
+QUESTION 1: TensorFlow vs PyTorch Differences
+
+1. Computational Graph Definition:
+TensorFlow: Uses static computational graphs.You define the graph first, then execute it.
+PyTorch: Uses dynamic computational graphs (define by run)
+
+2. Syntax:
+TensorFlow: More declarative style.
+PyTorch: More imperative and intuitive, feels like regular Python code.
+
+3. Debugging:
+TensorFlow: Debugging static graphs can be challenging.
+PyTorch: Easier debugging using standard Python tools like pdb.
+
+4. Deployment:
+TensorFlow: Strong production deployment tools (TensorFlow Serving, TensorFlow Lite, TFX)
+PyTorch: Historically weaker in production (improving with TorchServe, TorchScript
+when to use tensor flow and pytorch;
+ TensorFlow: Best for production-ready systems, mobile/edge deployment, or when using Google Cloud tools.
+ PyTorch: Best for research, prototyping, and projects where flexibility and quick iteration matter most.
+
+
+
+QUESTION 2: Jupyter Notebooks Use Cases in AI Development
+Use Case 1: Exploratory Data Analysis and Model Prototyping
+
+Data Exploration: Quickly visualize datasets, check distributions, identify outliers
+
+Iterative Model Development: Test different architectures, hyperparameters, and see results immediately
+
+Example: Loading a dataset, creating visualizations, trying different preprocessing techniques, and training multiple small models to gauge performance - all in an interactive environment.
+
+Use Case 2: Educational Demonstrations and Documentation
+
+Teaching Concepts: Combine explanatory text, mathematical equations, and executable code to explain AI concepts
+
+Reproducible Research: Share complete analysis pipelines with results embedded
+
+Example: Creating a tutorial that explains attention mechanisms in transformers with runnable code examples and visualizations of attention weights.
+
+
+QUESTION3: How spaCy Enhances NLP vs Basic Python String Operations
+Basic Python string methods (split(), replace(), find()) treat text as raw characters with no linguistic awareness. spaCy, on the other hand, provides a linguistically informed NLP pipeline
+
+Tokenization & Sentence Segmentation: Splits text into words/sentences with awareness of punctuation, abbreviations, etc.
+
+Part-of-Speech Tagging & Dependency Parsing: Identifies grammatical roles and syntactic relationships.
+
+Named Entity Recognition (NER): Extracts entities like people, places, organizations, dates.
+
+Lemmatization: Reduces words to their base form (e.g., running → run).
+
+Efficiency: Built in Cython, spaCy processes millions of words quickly—far faster than naive Python loops.
+
+
+
+QUESTION 3:
+Target Applications
+ Scikit‑learn; 
+   Focused on classical machine learning: regression, classification, clustering, dimensionality reduction, and preprocessing.  
+   Great for small to medium‑sized datasets and traditional statistical models.  
+   Not designed for deep learning or large‑scale neural networks.  
+
+ TensorFlow; 
+  Built for deep learning and large‑scale neural networks.  
+  Supports advanced architectures (CNNs, RNNs, Transformers) and distributed training.  
+  Includes deployment tools for mobile, web, and production environments.  
+
+
+ Ease of Use for Beginners
+  Scikit‑learn;  
+   Very beginner‑friendly with a *consistent API* (fit(), predict(), transform()).  
+   Minimal boilerplate code—ideal for quickly testing algorithms and pipelines.  
+   Excellent documentation and simple integration with NumPy, Pandas, and Matplotlib.  
+
+  TensorFlow; 
+   Steeper learning curve, especially for those new to deep learning.  
+   High‑level APIs like *Keras* make it easier, but still more complex than Scikit‑learn.  
+   Requires understanding of tensors, computational graphs, and GPU acceleration.  
+
+Community Support
+  Scikit‑learn;  
+   Mature, stable, and widely used in academia and industry for classical ML.  
+   Strong documentation, tutorials, and a large base of contributors.  
+   Slower pace of change—focused on reliability rather than cutting‑edge features.  
+
+  TensorFlow; 
+   Backed by Google with a massive global community.  
+   Rich ecosystem (TensorFlow Hub, TensorBoard, TensorFlow Lite, TensorFlow.js).  
+   Rapidly evolving, with strong support for state‑of‑the‑art deep learning research and production deployment.
